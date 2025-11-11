@@ -1,0 +1,35 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-section {
+    background: url('/images/sample-1.webp') center/cover no-repeat;
+    height: 80vh;
+    position: relative;
+}
+
+.header-section .overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 5rem;
+    margin: 0;
+}
+
+.section {
+    padding: 60px 20px;
+}
+
+blockquote {
+    font-size: 1.4rem;
+    color: #2e7d32;
+    border-left: 5px solid #2e7d32;
+    margin: 20px auto;
+    max-width: 600px;
+}

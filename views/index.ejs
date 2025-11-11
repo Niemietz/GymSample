@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title><%= data.header_logo %></title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- HEADER -->
+<section class="header-section">
+    <div class="overlay">
+        <div class="center-align white-text">
+            <h1><%= data.header_main_title %></h1>
+            <p><%= data.header_slogan %></p>
+            <p><%= data.header_subtitle_1 %> | <%= data.header_subtitle_2 %></p>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section white center">
+    <h3><%= data.about_us_title %></h3>
+    <p class="container"><%= data.about_us_description %></p>
+    <a href="#" class="btn green"><%= data.about_us_button_text %></a>
+</section>
+
+<!-- PLANS -->
+<section class="section light-green lighten-4 center">
+    <h3><%= data.plans_title %></h3>
+    <p><%= data.plans_subtitle %></p>
+    <h4>R$<%= data.plan_price %></h4>
+    <p><%= data.plan_type %> — <%= data.plan_description %></p>
+</section>
+
+<!-- SERVICES -->
+<section class="section white center">
+    <h3><%= data.services_title %></h3>
+    <p><%= data.services_subtitle %></p>
+    <div class="row">
+        <div class="col s12 m4">
+            <h5><%= data.service_1_title %></h5>
+            <p><%= data.service_1_description %></p>
+        </div>
+        <div class="col s12 m4">
+            <h5><%= data.service_2_title %></h5>
+            <p><%= data.service_2_description %></p>
+        </div>
+        <div class="col s12 m4">
+            <h5><%= data.service_3_title %></h5>
+            <p><%= data.service_3_description %></p>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="section grey lighten-4 center">
+    <blockquote><%= data.testimonial_quote %></blockquote>
+    <p><%= data.testimonial_navigation_previous %> | <%= data.testimonial_navigation_next %></p>
+</section>
+
+<!-- CONTACT FORM -->
+<section class="section white center">
+    <h4><%= data.contact_form_title %></h4>
+    <div class="container">
+        <form>
+            <div class="input-field">
+                <input type="text" placeholder="<%= data.contact_form_field_1 %>">
+            </div>
+            <div class="input-field">
+                <input type="email" placeholder="<%= data.contact_form_field_2 %>">
+            </div>
+            <div class="input-field">
+                <input type="text" placeholder="<%= data.contact_form_field_3 %>">
+            </div>
+            <div class="input-field">
+                <textarea class="materialize-textarea" placeholder="<%= data.contact_form_field_4 %>"></textarea>
+            </div>
+            <button class="btn green">Enviar</button>
+        </form>
+    </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="section black white-text center">
+    <h4><%= data.newsletter_title %></h4>
+    <p><%= data.newsletter_call_to_action %></p>
+    <input type="email" placeholder="<%= data.newsletter_email_field %>" class="white black-text" style="padding:5px;">
+</section>
+
+<!-- FOOTER -->
+<footer class="page-footer grey darken-4">
+    <div class="container center">
+        <p><%= data.footer_social_media_prompt %></p>
+        <ul>
+            <li><%= data.footer_nav_item_1 %></li>
+            <li><%= data.footer_nav_item_2 %></li>
+            <li><%= data.footer_nav_item_3 %></li>
+            <li><%= data.footer_nav_item_4 %></li>
+            <li><%= data.footer_nav_item_5 %></li>
+        </ul>
+        <p><%= data.footer_address %></p>
+        <p><%= data.footer_copyright %></p>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
